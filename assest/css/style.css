@@ -1,0 +1,45 @@
+:root{
+    --primary-black:#000;
+}
+
+@import url('/assest/css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 41px;
+    padding-left: 112.5px;
+    padding-right: 112.5px;
+}
+
+ .fa-bars{
+    display: none;
+ }
+header .navlinks a {
+    color:var(--primary-black);
+  
+}
+
+@media (max-width:950px) {
+    header{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    header > nav{
+        display: none;
+    }
+    .fa-bars{
+        display: flex;
+        font-size: 2rem;
+    }
+}
